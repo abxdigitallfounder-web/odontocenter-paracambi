@@ -393,11 +393,6 @@ export default function App() {
             <em className="italic font-light text-mid">pacientes dizem...</em>
           </h2>
 
-          {/* Quote Icon */}
-          <div className="mb-8">
-            <img src="https://images.pexels.com/photos/5355857/pexels-photo-5355857.jpeg" alt="Quote" className="w-40 h-40 object-cover rounded-lg" />
-          </div>
-
           {/* Testimonials Carousel */}
           <div className="space-y-8">
             {[
@@ -453,10 +448,10 @@ export default function App() {
         </div>
 
         {/* Right Column - Image */}
-        <div className="hidden md:flex items-center justify-center min-h-96">
+        <div className="flex items-center justify-center min-h-96 mt-12 md:mt-0">
           <div className="relative w-full h-96 bg-gradient-to-br from-cyan-light to-cyan-light/60 rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.pexels.com/photos/3807491/pexels-photo-3807491.jpeg?w=500&h=500&fit=crop"
+              src="https://images.pexels.com/photos/5355857/pexels-photo-5355857.jpeg"
               alt="Profissional da clínica"
               className="w-full h-full object-cover"
             />
