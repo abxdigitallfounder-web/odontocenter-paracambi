@@ -505,13 +505,15 @@ export default function App() {
 
         <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.3269989873397!2d-46.65915!3d-23.5889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56e9e8e9e9e9!2sAv%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            title="Google Maps - Localização OdontoCenter"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4451!2d-46.6667!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a37e5e5e5e5!2sSao%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1710610800000"
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full"
           />
         </div>
       </section>
