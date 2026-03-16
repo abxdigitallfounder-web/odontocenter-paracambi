@@ -1,6 +1,6 @@
 interface ButtonProps {
   children: React.ReactNode;
-  variant?: 'dark' | 'outline' | 'silver';
+  variant?: 'dark' | 'outline' | 'silver' | 'cyan';
   href?: string;
   onClick?: () => void;
   className?: string;
@@ -22,6 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
     dark: 'btn-dark',
     outline: 'btn-outline-dark',
     silver: 'btn-silver',
+    cyan: 'btn-cyan',
   };
 
   const classes = `${baseClasses} ${variants[variant]} ${className}`;

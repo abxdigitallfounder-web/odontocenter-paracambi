@@ -22,3 +22,64 @@
     pointer-events: none;
   }
 }
+
+@layer components {
+  /* Button Styles */
+  .btn-dark {
+    @apply px-8 py-4 text-sm font-medium tracking-widest uppercase rounded-lg transition-all duration-300 hover:scale-105 active:scale-95;
+    background-color: #0F0F0F;
+    color: white;
+  }
+  
+  .btn-dark:hover {
+    @apply shadow-lg;
+    background-color: #2C2C2C;
+  }
+
+  .btn-outline-dark {
+    @apply px-8 py-4 border-2 text-sm font-medium tracking-widest uppercase rounded-lg transition-all duration-300 hover:scale-105 active:scale-95;
+    border-color: #0F0F0F;
+    color: #0F0F0F;
+  }
+  
+  .btn-outline-dark:hover {
+    @apply shadow-lg;
+    background-color: #0F0F0F;
+    color: white;
+  }
+
+  .btn-silver {
+    @apply px-8 py-4 border-2 text-sm font-medium tracking-widest uppercase rounded-lg transition-all duration-300 hover:scale-105 active:scale-95;
+    background-color: white;
+    color: #0F0F0F;
+    border-color: #A8A8A8;
+  }
+  
+  .btn-silver:hover {
+    @apply shadow-lg;
+    background-color: #A8A8A8;
+    border-color: #A8A8A8;
+    color: #0F0F0F;
+  }
+
+  .btn-cyan {
+    @apply px-8 py-4 text-sm font-semibold tracking-widest uppercase rounded-lg transition-all duration-300 hover:scale-105 active:scale-95 relative overflow-hidden;
+    background-color: #00BCD4;
+    color: white;
+  }
+  
+  .btn-cyan:hover {
+    @apply shadow-lg;
+    background-color: #0097A7;
+  }
+
+  .btn-cyan::before {
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background-color: rgba(255, 255, 255, 0.1);
+    content: '';
+  }
+
+  .btn-cyan:hover::before {
+    @apply opacity-100;
+  }
+}
