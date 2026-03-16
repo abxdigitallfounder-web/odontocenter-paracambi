@@ -52,13 +52,6 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
 
-  const SVGTooth = () => (
-    <svg className="w-64 opacity-20 mx-auto" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
-      <path d="M100 20 C60 20 30 50 30 85 C30 110 40 130 50 155 C60 180 65 220 80 220 C90 220 95 195 100 180 C105 195 110 220 120 220 C135 220 140 180 150 155 C160 130 170 110 170 85 C170 50 140 20 100 20Z" stroke="rgba(0,0,0,0.25)" strokeWidth="1.5" fill="none"/>
-      <path d="M75 80 C75 60 100 50 125 80" stroke="rgba(0,0,0,0.15)" strokeWidth="1" fill="none"/>
-    </svg>
-  );
-
   return (
     <div className="bg-marble text-black">
       {/* NAV */}
@@ -510,9 +503,7 @@ export default function App() {
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
             className="w-full h-full"
           />
         </div>
